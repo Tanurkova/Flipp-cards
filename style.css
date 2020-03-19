@@ -24,9 +24,9 @@ body {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: 2s ease-in-out;
+  transition: 2s linear;
   border-radius: 10px;
-  box-shadow: 2px 3px 9px gray;
+  box-shadow: 8px 3px 8px rgb(94, 92, 92);
 }
 
 .card_animal-wrapper:hover {
@@ -85,8 +85,48 @@ body {
   bottom: 0;
   left: 0;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.178);
-  font-size: 1em;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
   color: white;
-  text-shadow: 2px 3px 9px black;
+  text-shadow: 3px 5px 9px black;
+}
+
+#zebra{
+  animation-name: zebra;
+  animation-duration: 3s;
+}
+
+@keyframes zebra{
+  0% {left: -100%;}
+  100%{left: 0%;}
+}
+
+#penguin{
+  animation-name: penguin;
+  animation-duration: 3s;
+}
+
+@keyframes penguin{
+  0% {right: -100%}
+  100%{right: 0%}
+}
+
+#panda{
+  animation-name: panda;
+  animation-duration: 3s;
+}
+
+@keyframes panda{
+  0% {left: -100%}
+  100%{left: 0%}
+}
+
+#dog{
+  animation-name: dog;
+  animation-duration: 3s;
+}
+
+@keyframes dog{
+  0% {right: -100%}
+  100%{right: 0%}
 }
